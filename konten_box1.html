@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Length Converter</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="box1.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="navigation">
+              <a href="index.html">Home</a>
+              <a href="konten_box1.html">Length</a>
+              <a href="konten_box2.html">Temperature</a>
+              <a href="konten_box3.html">Volume</a>
+              <a href="konten_box4.html">Mass</a>
+            </div>
+        <section class="home" id="home">
+            <div class="content">
+            <h2 class="converter-title">Length</h2>
+            </div>
+
+            <div class="input_container">
+            <input type="text" placeholder="Input" id="input">
+            </div>
+
+            <div class="unit_converter">
+                <div class="left">
+                    <p>From</p>
+                    <div class="select_container">
+                        <select id="inputType">
+                            <option value="km">Kilometer</option>
+                            <option value="hm">Hectometer</option>
+                            <option value="dam">Decameter</option>
+                            <option value="m">Meter</option>
+                            <option value="dm">Decimeter</option>
+                            <option value="cm">Centimeter</option>
+                            <option value="mm">Milimeter</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="middle">
+                    <i class="fas fa-cog fa-spin"
+                    style="font-size:20px"></i>
+                </div>
+                <div class="right">
+                    <p>To</p>
+                    <div class="select_container">
+                        <select id="resultType">
+                            <option value="km">Kilometer</option>
+                            <option value="hm">Hectometer</option>
+                            <option value="dam">Decameter</option>
+                            <option value="m">Meter</option>
+                            <option value="dm">Desimeter</option>
+                            <option value="cm">Centimeter</option>
+                            <option value="mm">Milimeter</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+           <div class="result_container">
+            <input type="text" placeholder="Result" id="result">
+           </div>
+
+           <div class = "bottom">
+            <button id="reset-btn" onclick="resetInput()"><i class="fas fa-regular fa-arrow-rotate-left"></i> Reset</button>
+        </div>
+        </section>
+    <script src = "box1.js"></script> 
+    </body>
+</html>
